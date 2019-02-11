@@ -5,16 +5,22 @@ import {
   MatMenuModule,
   MatToolbarModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatRippleModule,
+  MatSidenavModule, MatListModule
 } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderProfileComponent } from './shared/components/header-profile/header-profile.component';
+import { MenuSidebarComponent } from './shared/components/menu-sidebar/menu-sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderProfileComponent,
+    MenuSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
+    MatSidenavModule,
+    MatListModule,
+    MatRippleModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule

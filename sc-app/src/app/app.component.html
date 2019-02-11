@@ -1,25 +1,23 @@
-<mat-card>
-  Main Theme:
-  <button mat-raised-button color="primary">
-    Primary
+<mat-toolbar color="primary" >
+  <a class="brand-holder"
+     routerLink="">
+    <img src="../assets/img/logo.png" alt="">
+    <span>SKILLSCUB</span>
+  </a>
+  <button aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+    <mat-icon class="sidebar-icon" aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
-  <button mat-raised-button color="accent">
-    Accent
-  </button>
-  <button mat-raised-button color="warn">
-    Warning
-  </button>
-</mat-card>
-
-<mat-card class="alternate-theme">
-  Alternate Theme:
-  <button mat-raised-button color="primary">
-    Primary
-  </button>
-  <button mat-raised-button color="accent">
-    Accent
-  </button>
-  <button mat-raised-button color="warn">
-    Warning
-  </button>
-</mat-card>
+  <span class="spacer"></span>
+  <app-header-profile></app-header-profile>
+</mat-toolbar>
+<mat-sidenav-container class="sidebar">
+  <mat-sidenav #drawer mode="side" style="background-color: #2b323a;" opened role="navigation">
+    <mat-nav-list class="navlist">
+      <a mat-list-item routerLink='/'>Home</a>
+      <a mat-list-item routerLink='/about'>About</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
