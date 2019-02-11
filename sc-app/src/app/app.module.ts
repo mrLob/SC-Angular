@@ -14,13 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderProfileComponent } from './shared/components/header-profile/header-profile.component';
-import { MenuSidebarComponent } from './shared/components/menu-sidebar/menu-sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderProfileComponent,
-    MenuSidebarComponent
+    HeaderProfileComponent
   ],
   imports: [
     BrowserModule,
