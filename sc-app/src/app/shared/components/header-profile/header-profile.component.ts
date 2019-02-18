@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {UserModel} from '../../models/user-model';
 
 @Component({
   selector: 'app-header-profile',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderProfileComponent implements OnInit {
 
-  constructor() { }
+  @Input() user: UserModel;
+
+  constructor() {
+    console.log(this.user);
+  }
 
   ngOnInit() {
+    console.log(this.user);
   }
 
 }

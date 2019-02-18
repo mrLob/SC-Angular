@@ -2,13 +2,12 @@
       [matRippleCentered]="false"
       [matRippleDisabled]="false"
       [matRippleUnbounded]="false"
-      [matRippleColor]="primary"
       [matMenuTriggerFor]="menu">
   <img src="../../../../assets/img/avatar.png" alt="avatar">
   <span class="profile-info">
-    Unauthorised user
+    {{user.firstName +" "+ user.lastName}}
     <small>
-      Guest
+      {{user.role}}
     </small>
   </span>
 </div>

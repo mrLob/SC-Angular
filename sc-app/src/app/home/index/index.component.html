@@ -1,18 +1,64 @@
-<div class="img-backdrop" style=" background: linear-gradient(rgba(13, 60, 85, 0.8), rgba(13, 60, 85, 0.8)), url('../../../assets/img/img16.jpg');">
-  <div class="section-body">
-    <div class="row padding-bottom-xxl">
-      <div class="">
-        <h1 class="text-center">SkillsCub</h1>
-        <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu metus volutpat, congue magna at, interdum enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat facilisis ipsum, sed blandit velit. Mauris eu lobortis lorem. Vivamus varius eu magna a ullamcorper. Aenean sed turpis purus. Curabitur in diam quam. Sed at libero magna. Maecenas pharetra ornare diam, vitae interdum eros mollis in.
-        </p>
+<section class="full-width_section_img_background">
+  <div class="title">
+    SkillsCub
+  </div>
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu metus volutpat, congue magna at, interdum enim.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat facilisis
+    ipsum, sed blandit velit. Mauris eu lobortis lorem. Vivamus varius eu magna a ullamcorper. Aenean sed turpis purus.
+    Curabitur in diam quam. Sed at libero magna. Maecenas pharetra ornare diam, vitae interdum eros mollis in.
 
-      </div>
-      <div >
-        <a mat-button>Подать заявку</a>
-      </div>
+    <div class="action">
+      <button (click)="onClick" mat-raised-button>Подать заявку</button>
     </div>
   </div>
-</div>
+</section>
+<mat-card class="card">
+  <mat-card-header style=" ">
+    <mat-card-title>Не знаете с чего начать? </mat-card-title>
+    <mat-card-subtitle>Subtitle</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    Пройдите экспресс тест и узнайте, какие профессии вам подходят!
+  </mat-card-content>
+  <mat-card-actions align="between">
+    <button mat-button (click)="onAction1">Подать заявку</button>
+
+  </mat-card-actions>
+</mat-card>
+<section class="full-width_section_img_background">
+  <div class="title">
+    Lorem ipsum
+  </div>
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu metus volutpat, congue magna at, interdum enim.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat facilisis
+    ipsum, sed blandit velit. Mauris eu lobortis lorem. Vivamus varius eu magna a ullamcorper. Aenean sed turpis purus.
+    Curabitur in diam quam. Sed at libero magna. Maecenas pharetra ornare diam, vitae interdum eros mollis in.
+
+    <div class="action">
+      <button (click)="onClick" mat-raised-button>Action</button>
+    </div>
+  </div>
+</section>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>SkillsCub</mat-card-title>
+    <mat-card-subtitle>Subtitle</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu metus volutpat, congue magna at, interdum enim.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat facilisis
+    ipsum, sed blandit velit. Mauris eu lobortis lorem. Vivamus varius eu magna a ullamcorper. Aenean sed turpis purus.
+    Curabitur in diam quam. Sed at libero magna. Maecenas pharetra ornare diam, vitae interdum eros mollis in.
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button (click)="onAction1">Подать заявку</button>
+
+  </mat-card-actions>
+  <mat-card-footer>
+    Footer
+  </mat-card-footer>
+</mat-card>
 
 

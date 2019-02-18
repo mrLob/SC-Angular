@@ -1,14 +1,14 @@
 <mat-toolbar color="primary" >
-  <a class="brand-holder"
+  <div class="brand-holder"
      routerLink="">
     <img src="../assets/img/logo.png" alt="">
-    <span>SKILLSCUB</span>
-  </a>
+    <span>Skillscub</span>
+  </div>
   <button aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
     <mat-icon class="sidebar-icon" aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
   <span class="spacer"></span>
-  <app-header-profile></app-header-profile>
+  <app-header-profile [user]="user"></app-header-profile>
 </mat-toolbar>
 <mat-sidenav-container class="sidebar">
   <mat-sidenav #drawer mode="side" style="background-color: #2b323a;" opened role="navigation">

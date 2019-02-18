@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 import {
   MatButtonModule,
   MatMenuModule,
@@ -10,10 +10,11 @@ import {
   MatSidenavModule, MatListModule
 } from '@angular/material';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderProfileComponent } from './shared/components/header-profile/header-profile.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HeaderProfileComponent} from './shared/components/header-profile/header-profile.component';
+import {UserModel} from './shared/models/user-model';
 
 @NgModule({
   declarations: [
@@ -36,4 +37,5 @@ import { HeaderProfileComponent } from './shared/components/header-profile/heade
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
