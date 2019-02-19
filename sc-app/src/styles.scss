@@ -43,12 +43,10 @@ $sc-grey: (
 );
 
 
-
-
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$sc-app-primary: mat-palette($sc-grey,100,50,200);
+$sc-app-primary: mat-palette($sc-grey, 100, 50, 200);
 $sc-app-accent: mat-palette($mat-blue, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -74,28 +72,54 @@ body {
   font-size: 16px;
 }
 
-.mat-toolbar{
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.mat-toolbar {
   position: relative;
   z-index: 1005;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 }
 
-.full-width_section_img_background{
+.sidebar{
+  margin-right: 0!important;
+}
+
+.card{
+  width: 80%;
+  margin: 3rem auto;
+  .mat-card-title{
+    color: #2196f3;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .mat-card-content{
+    font-size: 1rem;
+  }
+}
+
+
+.full-width_section_img_background {
   display: flex;
-  background: linear-gradient(rgba(13, 60, 85, 0.8), rgba(13, 60, 85, 0.8)), url('/assets/img/img16.jpg');
+  background: linear-gradient(rgba(13, 60, 85, 0.8), rgba(13, 60, 85, 0.8)), url('/assets/img/pexels-photo-с.jpg');
   color: white;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
-  .title{
+
+  .title {
 
     padding-top: 2.2rem;
     padding-bottom: 1.5rem;
     font-size: 3rem;
 
   }
-  .content{
+
+  .content {
 
     margin: 0 15%;
     align-content: center;
@@ -103,7 +127,106 @@ body {
     font-size: 1.5rem;
     padding-bottom: 3rem;
 
-    .action{
+    .action {
+      padding-top: 1.5rem;
+    }
+
+  }
+}
+
+.full-width_section_dark {
+  display: flex;
+  background-color: #33596d;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+  .title {
+    padding-top: 2.2rem;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+  }
+
+  .content {
+    margin: 0 15%;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+
+    .action {
+      padding-top: 1.5rem;
+    }
+
+  }
+}
+
+.full-width_section_light {
+  display: flex;
+  background-color: #e5e6e6;
+  color: #313335;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+
+      padding-top: 2.2rem;
+      padding-bottom: 1.5rem;
+      font-size: 3rem;
+
+    }
+
+    .content {
+
+      margin: 0 15%;
+      align-content: center;
+      text-align: center;
+      font-size: 1.5rem;
+      padding-bottom: 3rem;
+
+      .action {
+        padding-top: 1.5rem;
+      }
+
+    }
+  }
+}
+
+.full-width_section_header {
+  display: flex;
+  background: linear-gradient(rgba(13, 60, 85, 0.8), rgba(13, 60, 85, 0.8)), url('/assets/img/pexels-photo-с.jpg');
+  color: white;
+  width: 100%;
+  height: calc(75vh - 64px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+
+    padding-top: 2.2rem;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+
+  }
+
+  .content {
+
+    margin: 0 15%;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+
+    .action {
       padding-top: 1.5rem;
     }
 
