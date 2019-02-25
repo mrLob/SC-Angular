@@ -9,18 +9,17 @@
   margin: auto;
   color: #2196f3;
   padding: 8px;
-}
-
-.brand-holder img{
-  height: 50px;
-}
-
-.brand-holder span{
-  margin: auto; /* Important */
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.2rem;
+  cursor: pointer;
+  img{
+    height: 50px;
+  }
+  span{
+    margin: auto; /* Important */
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
 }
 
 .sidebar{

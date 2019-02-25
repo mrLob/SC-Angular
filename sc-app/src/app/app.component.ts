@@ -9,5 +9,6 @@ import {UserModel} from './shared/models/user-model';
 export class AppComponent {
   title = 'sc-app';
   public user: UserModel = {firstName: 'Alan', lastName: 'Noman', contacts: '@telegaMoya', role: 'Student'};
-
+  constructor(){
+  }
 }
