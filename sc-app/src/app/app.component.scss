@@ -20,6 +20,14 @@
     font-weight: 500;
     font-size: 1.2rem;
   }
+  @media screen and (max-width: 420px) {
+    span{
+      display: none;
+    }
+    img{
+      height: 40px;
+    }
+  }
 }
 
 .sidebar{

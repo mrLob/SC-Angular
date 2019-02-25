@@ -11,7 +11,12 @@
   <app-header-profile [user]="user"></app-header-profile>
 </mat-toolbar>
 <mat-sidenav-container class="sidebar">
-  <mat-sidenav #drawer mode="side" style="background-color: #2b323a;" opened role="navigation">
+  <mat-sidenav #drawer mode="side"
+               fixedInViewport="true"
+               [attr.role]="isHandset ? 'dialog' : 'navigation'"
+               [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
+               [opened]="!(isHandset | async)!.matches"
+               style="background-color: #2b323a;">
     <mat-nav-list class="navlist">
       <a mat-list-item routerLink='/'>Home</a>
       <a mat-list-item routerLink='/about'>About</a>

@@ -73,12 +73,17 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: calc(14px + 6 * ( (100vw - 420px) / 480));
 }
 
-@media only screen and (max-width: 640px) {
-  body {
-    font-size: 12px;
+@media screen and (max-width: 420px) {
+  .body{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .body{
+    font-size: 20px;
   }
 }
 
@@ -97,13 +102,41 @@ body {
   margin: 3rem auto;
   .mat-card-title{
     color: #2196f3;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   .mat-card-content{
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 420px) {
+    margin: 0!important;
+    margin-top: 1.2rem!important;
+    .mat-card-title{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .mat-card-content{
+      font-size: 0.7rem;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .mat-card-title{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .mat-card-content{
+      font-size: 1rem;
+    }
   }
 }
+@media screen and (max-width: 420px) {
+  .card:last-child{
+    margin-bottom: 1.2rem!important;
+
+  }
+}
+
+
 .card-big{
   display: flex;
   width: 80%;
@@ -144,6 +177,18 @@ body {
 
   }
 
+  @media screen and (max-width: 420px) {
+    .content {
+      align-content: center;
+      text-align: center;
+      font-size: 1rem;
+      padding-bottom: 1.5rem;
+
+      .action {
+        padding-top: 1rem;
+      }
+    }
+  }
   .content {
 
     margin: 0 15%;
@@ -223,6 +268,29 @@ body {
 
     }
   }
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    .title {
+
+      padding-top: 1.5rem;
+      padding-bottom: 1.2rem;
+      font-size: 2rem;
+
+    }
+
+    .content {
+
+      margin: 0 5%;
+      align-content: center;
+      text-align: center;
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+
+      .action {
+        padding-top: 1rem;
+      }
+    }
+  }
 }
 
 .full-width_section_header {
@@ -255,5 +323,19 @@ body {
       padding-top: 1.5rem;
     }
 
+  }
+
+  @media screen and (max-width: 420px) {
+    .content {
+      margin: 0 5%;
+      align-content: center;
+      text-align: center;
+      font-size: 1.2rem;
+      padding-bottom: 1.5rem;
+
+      .action {
+        padding-top: 1rem;
+      }
+    }
   }
 }
