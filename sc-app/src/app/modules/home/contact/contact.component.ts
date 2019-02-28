@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -8,10 +9,10 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('Контакты');
   }
 
 }
