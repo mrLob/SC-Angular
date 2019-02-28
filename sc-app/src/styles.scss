@@ -70,19 +70,22 @@ html, body {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+html{
   font-size: calc(14px + 6 * ( (100vw - 420px) / 480));
 }
 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 @media screen and (max-width: 420px) {
-  .body{
+  .html{
     font-size: 12px;
   }
 }
 @media screen and (min-width: 900px) {
-  .body{
+  .html{
     font-size: 20px;
   }
 }
@@ -298,7 +301,6 @@ body {
   background: linear-gradient(rgba(13, 60, 85, 0.8), rgba(13, 60, 85, 0.8)), url('/assets/img/pexels-photo-с.jpg');
   color: white;
   width: 100%;
-  height: calc(75vh - 64px);
   justify-content: center;
   align-items: center;
   flex-direction: column;
