@@ -9,6 +9,7 @@ import {ContactComponent} from './contact/contact.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PaymentComponent} from './payment/payment.component';
 import {LicenseComponent} from './license/license.component';
+import {NavigationService} from '../../services/navigation.service';
 
 @NgModule({
   declarations: [IndexComponent, AboutComponent, ContactComponent, PaymentComponent, LicenseComponent],
@@ -23,7 +24,6 @@ import {LicenseComponent} from './license/license.component';
   ]
 })
 export class HomeModule {
-
   constructor() {}
 
 }

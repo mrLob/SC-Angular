@@ -30,15 +30,18 @@
   }
 }
 
-.sidebar{
-  height: calc(100% - 64px);
-  margin-right: 10px;
-}
+
 
 .navlist{
   width: 240px;
   background-color: #2b323a;
   color: rgba(255, 255, 255, 0.55);
+  mat-icon{
+    margin-right: 1rem;
+  }
+  .active-link{
+    color: rgba(255, 255, 255, 0.95);
+  }
 }
 
 .mat-list-item{

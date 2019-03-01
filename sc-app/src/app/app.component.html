@@ -11,18 +11,13 @@
   <app-header-profile [user]="user"></app-header-profile>
 </mat-toolbar>
 <mat-sidenav-container class="sidebar">
-  <mat-sidenav #drawer mode="side"
-               fixedInViewport="true"
+  <mat-sidenav #drawer
                [attr.role]="isHandset ? 'dialog' : 'navigation'"
                [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
                [opened]="!(isHandset | async)!.matches"
                style="background-color: #2b323a;">
-    <mat-nav-list class="navlist">
-      <a mat-list-item routerLink='/'>Home</a>
-      <a mat-list-item routerLink='/about'>About</a>
-      <a mat-list-item routerLink='/contact'>Contact</a>
-      <a mat-list-item routerLink='/payment'>Payment</a>
-      <a mat-list-item routerLink='/license'>License</a>
+    <mat-nav-list class="navlist" *ngFor="let link of links">
+      <a mat-list-item [routerLink]='link.path' routerLinkActive="active-link"><mat-icon>{{link.icon}}</mat-icon> {{link.text}}</a>
       <!--<a mat-list-item routerLink='/about'>About</a>-->
     </mat-nav-list>
   </mat-sidenav>

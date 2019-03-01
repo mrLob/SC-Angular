@@ -61,6 +61,10 @@ $sc-app-theme: mat-light-theme($sc-app-primary, $sc-app-accent, $sc-app-warn);
 @include angular-material-theme($sc-app-theme);
 
 /* You can add global styles to this file, and also import other style files */
+$mobile-screen-max:  420px;
+$tablet-screen-min: 1020px;
+
+$mobile-content-font-size: 1rem;
 
 *:focus {
   outline: none;
@@ -75,16 +79,17 @@ html{
 }
 
 body {
+  background-color: #e5e6e6;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: $mobile-screen-max) {
   .html{
     font-size: 12px;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: $tablet-screen-min) {
   .html{
     font-size: 20px;
   }
@@ -95,8 +100,8 @@ body {
   z-index: 1005;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 }
-
 .sidebar{
+  height: calc(100% - 64px);
   margin-right: 0!important;
 }
 
@@ -111,7 +116,7 @@ body {
   .mat-card-content{
     font-size: 0.9rem;
   }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $mobile-screen-max) {
     margin: 0!important;
     margin-top: 1.2rem!important;
     .mat-card-title{
@@ -122,7 +127,7 @@ body {
       font-size: 0.7rem;
     }
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: $tablet-screen-min) {
     .mat-card-title{
       font-size: 1.5rem;
       font-weight: 700;
@@ -132,7 +137,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: $mobile-screen-max) {
   .card:last-child{
     margin-bottom: 1.2rem!important;
 
@@ -180,11 +185,11 @@ body {
 
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $mobile-screen-max) {
     .content {
       align-content: center;
       text-align: center;
-      font-size: 1rem;
+      font-size: $mobile-content-font-size;
 
 
       .action {
@@ -240,7 +245,7 @@ body {
   display: flex;
   background-color: #e5e6e6;
   color: #313335;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   flex-direction: row;
@@ -271,7 +276,7 @@ body {
 
     }
   }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $mobile-screen-max) {
     flex-direction: column;
     .title {
 
@@ -286,7 +291,7 @@ body {
       margin: 0 5%;
       align-content: center;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: $mobile-content-font-size;
       padding-bottom: 1rem;
 
       .action {
@@ -304,9 +309,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media screen and (max-width: 420px) {
-    height: auto;
-  }
 
   .title {
 
@@ -330,12 +332,14 @@ body {
 
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $mobile-screen-max) {
+    height: auto;
+
     .content {
-      margin: 0 5%;
+      margin: 0 3%;
       align-content: center;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: $mobile-content-font-size;
       padding-bottom: 1.5rem;
 
       .action {
