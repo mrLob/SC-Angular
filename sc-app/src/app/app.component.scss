@@ -41,6 +41,9 @@
   }
   .active-link{
     color: rgba(255, 255, 255, 0.95);
+    mat-icon{
+      color: #2196f3;
+    }
   }
 }
 
