@@ -14,7 +14,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HeaderProfileComponent} from './shared/components/header-profile/header-profile.component';
-import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
