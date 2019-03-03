@@ -75,7 +75,17 @@ html, body {
 }
 
 html{
-  font-size: calc(14px + 6 * ( (100vw - 420px) / 480));
+  font-size: calc(12px + 6 * ( (100vw - 420px) / 480));
+
+  @media screen and (max-width: $mobile-screen-max) {
+
+    font-size: 12px;
+
+  }
+  @media screen and (min-width: $tablet-screen-min) {
+    font-size: 19.5px;
+
+  }
 }
 
 body {
@@ -84,16 +94,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-@media screen and (max-width: $mobile-screen-max) {
-  .html{
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: $tablet-screen-min) {
-  .html{
-    font-size: 20px;
-  }
-}
 
 .mat-toolbar {
   position: relative;
