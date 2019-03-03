@@ -11,6 +11,6 @@ export class LicenseComponent implements OnInit {
   constructor(private titleService: Title) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Оплата');
+    this.titleService.setTitle('Лицензионное соглашение');
   }
 }
