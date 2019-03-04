@@ -103,6 +103,17 @@ body {
 .sidebar{
   height: calc(100% - 64px);
   margin-right: 0!important;
+  mat-sidenav{
+    max-width: 242px;
+  }
+
+  .info{
+    position: absolute;
+    font-size: 0.7rem;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.55);
+    bottom: 3%;
+  }
 }
 
 .card{

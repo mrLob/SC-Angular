@@ -20,6 +20,25 @@
       <a mat-list-item [routerLink]='link.path' routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><mat-icon>{{link.icon}}</mat-icon> {{link.text}}</a>
       <!--<a mat-list-item routerLink='/about'>About</a>-->
     </mat-nav-list>
+    <div class="info">
+      <mat-divider></mat-divider>
+      <small >
+        <span>© ИП Виктория Щуровская</span>
+      </small>
+      <small >
+        <span>SkillsCub, 2017.</span>
+      </small>
+      <small>
+          <span>Свидетельство о гос. регистрации</span>
+      </small>
+      <small >
+        <span> №0620051 от 11.07.2016 </span>
+      </small>
+      <small >
+        <span>УНП 192675581</span>
+
+      </small>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
