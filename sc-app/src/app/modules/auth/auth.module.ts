@@ -3,9 +3,10 @@ import {CommonModule} from '@angular/common';
 
 import {AuthRoutingModule} from './auth-routing.module';
 import {SignInComponent} from './sign-in/sign-in.component';
+import {SignUpComponent} from './sign-up/sign-up.component';
+
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatProgressSpinnerModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
-import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [SignInComponent, SignUpComponent],

@@ -9,6 +9,11 @@ import {Router} from '@angular/router';
 export class SignUpComponent implements OnInit {
 
   username: string;
+  lastName: string;
+  firstName: string;
+  email: string;
+
+  showSpinner = false;
 
   password: string;
 

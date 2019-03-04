@@ -15,6 +15,7 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HeaderProfileComponent} from './shared/components/header-profile/header-profile.component';
 import {FormsModule} from '@angular/forms';
+import {AuthGuard} from '@app/guards/auth.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import {FormsModule} from '@angular/forms';
     MatCardModule
 
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {

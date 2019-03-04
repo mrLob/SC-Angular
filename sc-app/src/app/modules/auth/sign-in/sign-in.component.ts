@@ -16,6 +16,8 @@ export class SignInComponent implements OnInit {
 
   password: string;
 
+  showSpinner = false;
+
   ngOnInit() {
 
   }
